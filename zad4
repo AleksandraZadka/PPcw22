@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+def duplikat(zbiorek):
+	dupl=list(set(zbiorek))
+	return dupl
+wejscie=['kot','pies','chomik','kot','pies','pies','wydra','okoń']
+print duplikat(wejscie)	
+	

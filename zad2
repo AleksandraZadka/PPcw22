@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+#wersja pierwsza 
+def palindrom(sek):
+	i=len(sek)/2
+	while i>0:
+		i=i-1
+		if sek[i]!=sek[len(sek)-i-1]:
+			return False
+		else:
+			return True
+		
+
+print palindrom('ikar łapał raki')
+print palindrom('koby bok')
+print palindrom('może jutro ta dama da tortu jeżom')
+print palindrom('zakopanenapokaz')
+
+#wersja druga
+
+def obrocone(slowo):
+	obrot=""
+	for znak in xrange(0,len(slowo)):
+		obrot=slowo[znak]+obrot
+	return obrot
+def palindrom(slowo):
+	for znak in xrange(0,len(slowo)):
+		if obrocone(slowo)[znak]==slowo[znak]:
+			return True
+		else:
+			return False
+print palindrom('ikar lapal raki')
+print obrocone('ikar lapal raki')

@@ -1,0 +1,29 @@
+from math import sqrt
+def fkwadratowa(a,b,c,x):
+	return a*x**2+b*x+c
+	
+def delta(a,b,c):
+	return b**2-4*a*c
+	
+def miej_zerowe(a,b,c):
+	d=delta(a,b,c)
+	if d>0:
+		x1=(-float(b)-sqrt(d))/(2*float(a))
+		x2=(-float(b)+sqrt(d))/(2*float(a))
+		return (x1,x2)
+	elif d<0:
+		return None
+	else:
+		x0=-float(b)/(2*float(a))
+		return (x0)
+	return miej_zerowe(1,2,1)
+
+for i in xrange(-10,10):
+	print fkwadratowa(1,2,1,i)
+	
+
+	
+		
+	
+	
+	
