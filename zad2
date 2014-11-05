@@ -3,7 +3,7 @@
 def palindrom(sek):
 	i=len(sek)/2
 	while i>0:
-		i=i-1
+		i=1
 		if sek[i]!=sek[len(sek)-i-1]:
 			return False
 		else:
