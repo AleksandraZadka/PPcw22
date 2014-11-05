@@ -10,10 +10,10 @@ def palindrom(sek):
 			return True
 		
 
-print palindrom('ikar łapał raki')
-print palindrom('koby bok')
-print palindrom('może jutro ta dama da tortu jeżom')
-print palindrom('zakopanenapokaz')
+print palindrom('Ikar łapał raki')
+print palindrom('Kobyły bok')
+print palindrom('Może jutro ta dama da tortu jeżom')
+print palindrom('Zakopane na pokaz')
 
 #wersja druga
 
